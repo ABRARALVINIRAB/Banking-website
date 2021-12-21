@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Alvi' Bank</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="container">
+
+        <h1 class="text-center mt-4 ">Welcome to <span class="text-info   ">Alvi's</span> Bank</h1>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <div class="container px-4">
+                <div class="row gx-4">
+                    <div class="col text-center ">
+                        <div class="bg-secondary  p-5 text-white fw-bold ">Deposit <br>
+                            $<span id="deposit-add">00</span></div>
+                    </div>
+                    <div class="col bg-danger text-center">
+                        <div class="p-3 p-5 text-white ">Withdraw <br>
+                            $<span id="withdraw-add">00</span></div>
+                    </div>
+                    <div class="col bg-success ms-2 text-center">
+                        <div class="p-5 text-white ">Balance
+                            <br>
+                            $<span id="final-balance">1000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-5 text-center">
+            <div class="container px-4">
+                <div class="row gx-5">
+                    <div class="col">
+                        <div class="p-3 border bg-light">
+                            <h3 class="p-3">Please Deposit</h3>
+                            <input id="deposit-amount" type="text" placeholder="Deposit Amount $$">
+                            <br> <br>
+                            <button id="deposit-button">Deposit</button>
+                        </div>
+
+                    </div>
+                    <div class="col bg-info bg-gradient">
+                        <div class="p-3 ">
+                            <h3 class="p-3">Please Withdraw</h3>
+                            <input id="withdraw-amount" type="text" placeholder="Withdraw Amount $$">
+                            <br> <br>
+                            <button id="withdraw-button">Withdraw</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center align-items-center mt-5">
+            <h4 class="">You have a <span class=" text-danger">surprice!!</span> click the button</h4>
+            <br>
+
+
+        </div>
+        <div class="container">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <button id="cards" class="text-danger p-1 rounded m-1 bg-dark.bg-gradient">click me</button>
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="bank.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
